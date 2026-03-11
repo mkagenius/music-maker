@@ -1,11 +1,10 @@
 # Music Maker
-<video src="./kkk.mp4" controls width="960">
-  Your browser does not support the video tag.
-</video>
-
-[Download the demo video](./kkk.mp4)
 
 Create music using Claude Code. Or Codex.
+
+
+https://github.com/user-attachments/assets/d3d78550-e19f-4011-bd9f-7123061de983
+
 
 ## Run
 
