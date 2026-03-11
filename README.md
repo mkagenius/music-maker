@@ -1,4 +1,5 @@
 # Music Maker
+<img width="1522" height="960" alt="image" src="https://github.com/user-attachments/assets/68aa96ab-bdc3-42a4-9f33-b13fa942ba27" />
 
 A small browser sequencer inspired by Chrome Music Lab Song Maker, but driven by JSON.
 
