@@ -1,5 +1,10 @@
 # Music Maker
-<img width="1522" height="960" alt="image" src="https://github.com/user-attachments/assets/68aa96ab-bdc3-42a4-9f33-b13fa942ba27" />
+
+
+
+https://github.com/user-attachments/assets/54e84749-2e80-43b9-af47-316cc3e0d2fd
+
+
 
 Create music using Claude Code. Or Codex.
 
