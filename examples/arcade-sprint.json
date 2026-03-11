@@ -1,0 +1,48 @@
+{
+  "title": "Arcade Sprint",
+  "tempo": 148,
+  "steps": 16,
+  "rows": [
+    { "note": "G5", "color": "#ff536e" },
+    { "note": "E5", "color": "#ff855d" },
+    { "note": "D5", "color": "#ffb347" },
+    { "note": "C5", "color": "#e8db3a" },
+    { "note": "A4", "color": "#95c73f" },
+    { "note": "G4", "color": "#20b58d" },
+    { "note": "E4", "color": "#18a3d7" },
+    { "note": "D4", "color": "#6e7ff5" }
+  ],
+  "notes": [
+    { "step": 0, "note": "D5", "length": 1 },
+    { "step": 1, "note": "E5", "length": 1 },
+    { "step": 2, "note": "G5", "length": 1 },
+    { "step": 3, "note": "E5", "length": 1 },
+    { "step": 4, "note": "D5", "length": 1 },
+    { "step": 5, "note": "C5", "length": 1 },
+    { "step": 6, "note": "A4", "length": 1 },
+    { "step": 7, "note": "C5", "length": 1 },
+    { "step": 8, "note": "D5", "length": 1 },
+    { "step": 9, "note": "E5", "length": 1 },
+    { "step": 10, "note": "G5", "length": 1 },
+    { "step": 11, "note": "E5", "length": 1 },
+    { "step": 12, "note": "D5", "length": 2 },
+    { "step": 14, "note": "A4", "length": 1 },
+    { "step": 15, "note": "D5", "length": 1 }
+  ],
+  "drums": [
+    { "step": 0, "lane": "kick" },
+    { "step": 4, "lane": "kick" },
+    { "step": 8, "lane": "kick" },
+    { "step": 12, "lane": "kick" },
+    { "step": 4, "lane": "snare" },
+    { "step": 12, "lane": "snare" },
+    { "step": 1, "lane": "hat" },
+    { "step": 3, "lane": "hat" },
+    { "step": 5, "lane": "hat" },
+    { "step": 7, "lane": "hat" },
+    { "step": 9, "lane": "hat" },
+    { "step": 11, "lane": "hat" },
+    { "step": 13, "lane": "hat" },
+    { "step": 15, "lane": "hat" }
+  ]
+}

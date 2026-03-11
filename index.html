@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Maker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="glow glow-one"></div>
+    <div class="glow glow-two"></div>
+
+    <main class="app-shell">
+      <header class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">JSON Sequencer</p>
+          <h1>Music Maker</h1>
+          <p class="hero-text">
+            Paste a tune idea as JSON, drop a file, or sketch directly on the
+            grid. The app turns it into a playable pattern with melody and
+            drums.
+          </p>
+        </div>
+
+        <div class="hero-card">
+          <p class="hero-card-label">Accepted JSON</p>
+          <pre>{
+  "title": "Neon Steps",
+  "tempo": 120,
+  "steps": 8,
+  "notes": [{ "step": 0, "note": "G4", "length": 2 }],
+  "drums": [{ "step": 2, "lane": "kick" }]
+}</pre>
+        </div>
+      </header>
+
+      <section class="workspace">
+        <section class="panel stage-panel">
+          <div class="stage-header">
+            <div>
+              <p class="panel-label">Live Pattern</p>
+              <h2 id="songTitle">Music Maker Demo</h2>
+            </div>
+
+            <div class="transport">
+              <button id="playButton" class="primary-button" type="button">
+                Play
+              </button>
+              <button id="stopButton" class="ghost-button" type="button">
+                Stop
+              </button>
+              <button id="recordButton" class="record-button" type="button">
+                Record
+              </button>
+              <button id="stopRecordButton" class="ghost-button" type="button" disabled>
+                Stop Rec
+              </button>
+              <button id="loadDemoButton" class="ghost-button" type="button">
+                Load Demo
+              </button>
+              <button id="exportButton" class="ghost-button" type="button">
+                Export JSON
+              </button>
+            </div>
+          </div>
+
+          <div class="meta-strip">
+            <span class="meta-pill" id="tempoBadge">120 BPM</span>
+            <span class="meta-pill" id="stepsBadge">8 steps</span>
+            <span class="meta-pill">Click cells to edit</span>
+          </div>
+
+          <div class="sequencer-shell">
+            <div class="grid-shell">
+              <div class="grid-top-left">Pitch</div>
+              <div id="stepMarkers" class="step-markers"></div>
+              <div id="rowLabels" class="row-labels"></div>
+              <div class="grid-stage">
+                <div id="melodyCells" class="melody-cells"></div>
+                <div id="melodyNotes" class="melody-notes"></div>
+                <div id="playhead" class="playhead"></div>
+              </div>
+            </div>
+
+            <div class="drum-shell">
+              <div class="drum-shell-header">
+                <span>Drums</span>
+                <span class="drum-shell-hint">Kick / Snare / Hat</span>
+              </div>
+              <div class="drum-grid-wrap">
+                <div id="drumLabels" class="drum-labels"></div>
+                <div id="drumCells" class="drum-cells"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="control-bar">
+            <label class="control">
+              <span>Tempo</span>
+              <input
+                id="tempoSlider"
+                type="range"
+                min="70"
+                max="180"
+                step="1"
+                value="120"
+              />
+            </label>
+
+            <label class="control">
+              <span>New note length</span>
+              <select id="lengthSelect">
+                <option value="1">1 step</option>
+                <option value="2" selected>2 steps</option>
+                <option value="3">3 steps</option>
+                <option value="4">4 steps</option>
+              </select>
+            </label>
+
+            <label class="control file-control">
+              <span>Upload JSON</span>
+              <input id="fileInput" type="file" accept=".json,application/json" />
+            </label>
+          </div>
+
+          <p id="statusMessage" class="status-message">
+            Demo loaded. You can press Play immediately or paste your own JSON.
+          </p>
+          <div class="recording-row">
+            <span id="recordingBadge" class="recording-badge" hidden>REC</span>
+            <a
+              id="recordingLink"
+              class="download-link is-hidden"
+              href="#"
+              download
+            >
+              Download last recording
+            </a>
+          </div>
+        </section>
+
+        <aside class="panel json-panel">
+          <div class="json-header">
+            <div>
+              <p class="panel-label">JSON Studio</p>
+              <h2>Song Data</h2>
+            </div>
+            <button id="formatButton" class="ghost-button" type="button">
+              Format
+            </button>
+          </div>
+
+          <textarea
+            id="jsonInput"
+            spellcheck="false"
+            aria-label="Song JSON input"
+          ></textarea>
+
+          <div class="json-actions">
+            <button id="applyButton" class="primary-button" type="button">
+              Apply JSON
+            </button>
+            <button id="copyButton" class="ghost-button" type="button">
+              Copy JSON
+            </button>
+          </div>
+
+          <div class="hint-card">
+            <p class="hint-title">Notes</p>
+            <ul>
+              <li>Use `note` like `G4` or `row` like `4`.</li>
+              <li>Use `length` to stretch a note across steps.</li>
+              <li>Drum lanes: `kick`, `snare`, `hat`.</li>
+            </ul>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

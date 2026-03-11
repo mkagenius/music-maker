@@ -1,0 +1,35 @@
+{
+  "title": "Rainy Minor",
+  "tempo": 96,
+  "steps": 12,
+  "rows": [
+    { "note": "F5", "color": "#e35d85" },
+    { "note": "E5", "color": "#ff7f61" },
+    { "note": "D5", "color": "#ffb44a" },
+    { "note": "C5", "color": "#d5d341" },
+    { "note": "A4", "color": "#88be43" },
+    { "note": "G4", "color": "#20af88" },
+    { "note": "F4", "color": "#1f99cf" },
+    { "note": "D4", "color": "#6e7cf0" }
+  ],
+  "notes": [
+    { "step": 0, "note": "D4", "length": 2 },
+    { "step": 2, "note": "F4", "length": 2 },
+    { "step": 4, "note": "A4", "length": 2 },
+    { "step": 6, "note": "G4", "length": 2 },
+    { "step": 8, "note": "F4", "length": 2 },
+    { "step": 10, "note": "D4", "length": 2 },
+    { "step": 3, "note": "D5", "length": 1 },
+    { "step": 9, "note": "C5", "length": 1 }
+  ],
+  "drums": [
+    { "step": 0, "lane": "kick" },
+    { "step": 6, "lane": "kick" },
+    { "step": 3, "lane": "snare" },
+    { "step": 9, "lane": "snare" },
+    { "step": 2, "lane": "hat" },
+    { "step": 5, "lane": "hat" },
+    { "step": 8, "lane": "hat" },
+    { "step": 11, "lane": "hat" }
+  ]
+}

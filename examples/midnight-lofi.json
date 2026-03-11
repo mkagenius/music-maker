@@ -1,0 +1,37 @@
+{
+  "title": "Midnight Lo-Fi",
+  "tempo": 84,
+  "steps": 16,
+  "rows": [
+    { "note": "D5", "color": "#c55ffc" },
+    { "note": "C5", "color": "#ef5c70" },
+    { "note": "A4", "color": "#ff9c4b" },
+    { "note": "G4", "color": "#d2c43a" },
+    { "note": "F4", "color": "#8dbd3f" },
+    { "note": "E4", "color": "#29ad88" },
+    { "note": "D4", "color": "#169ad2" },
+    { "note": "C4", "color": "#6881f4" }
+  ],
+  "notes": [
+    { "step": 0, "note": "D4", "length": 2 },
+    { "step": 2, "note": "F4", "length": 2 },
+    { "step": 4, "note": "G4", "length": 2 },
+    { "step": 6, "note": "A4", "length": 2 },
+    { "step": 8, "note": "G4", "length": 2 },
+    { "step": 10, "note": "F4", "length": 2 },
+    { "step": 12, "note": "D4", "length": 2 },
+    { "step": 14, "note": "C4", "length": 2 }
+  ],
+  "drums": [
+    { "step": 0, "lane": "kick" },
+    { "step": 4, "lane": "kick" },
+    { "step": 8, "lane": "kick" },
+    { "step": 12, "lane": "kick" },
+    { "step": 4, "lane": "snare" },
+    { "step": 12, "lane": "snare" },
+    { "step": 2, "lane": "hat" },
+    { "step": 6, "lane": "hat" },
+    { "step": 10, "lane": "hat" },
+    { "step": 14, "lane": "hat" }
+  ]
+}

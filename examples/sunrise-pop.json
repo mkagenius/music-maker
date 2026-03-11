@@ -1,0 +1,35 @@
+{
+  "title": "Sunrise Pop",
+  "tempo": 126,
+  "steps": 8,
+  "rows": [
+    { "note": "E5", "color": "#ef5c70" },
+    { "note": "D5", "color": "#ff8666" },
+    { "note": "C5", "color": "#ffb347" },
+    { "note": "A4", "color": "#e3d93f" },
+    { "note": "G4", "color": "#96c63b" },
+    { "note": "E4", "color": "#1eb787" },
+    { "note": "D4", "color": "#18a3d7" },
+    { "note": "C4", "color": "#6982f5" }
+  ],
+  "notes": [
+    { "step": 0, "note": "C5", "length": 1 },
+    { "step": 1, "note": "A4", "length": 1 },
+    { "step": 2, "note": "G4", "length": 1 },
+    { "step": 3, "note": "A4", "length": 1 },
+    { "step": 4, "note": "C5", "length": 2 },
+    { "step": 6, "note": "D5", "length": 1 },
+    { "step": 7, "note": "A4", "length": 1 }
+  ],
+  "drums": [
+    { "step": 0, "lane": "kick" },
+    { "step": 2, "lane": "kick" },
+    { "step": 4, "lane": "kick" },
+    { "step": 6, "lane": "kick" },
+    { "step": 4, "lane": "snare" },
+    { "step": 1, "lane": "hat" },
+    { "step": 3, "lane": "hat" },
+    { "step": 5, "lane": "hat" },
+    { "step": 7, "lane": "hat" }
+  ]
+}
