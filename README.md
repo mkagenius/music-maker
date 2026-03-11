@@ -1,5 +1,9 @@
 # Music Maker
-<img width="1522" height="960" alt="image" src="https://github.com/user-attachments/assets/68aa96ab-bdc3-42a4-9f33-b13fa942ba27" />
+<video src="./kkk.mp4" controls width="960">
+  Your browser does not support the video tag.
+</video>
+
+[Download the demo video](./kkk.mp4)
 
 Create music using Claude Code. Or Codex.
 
@@ -44,5 +48,4 @@ Open [index.html](/Users/manish/Downloads/music-maker/index.html) in a browser, 
 ```
 
 `notes` can use either `note` or `row`.
-
 
